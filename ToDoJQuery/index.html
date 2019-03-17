@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Мой список дел</title>
+<link href="css/todo.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="todo.js"></script> <!---ВАЖНО ЧТОБЫ ЭТОТ ФАЙЛ БЫЛ ПОСЛЕДНИМ ИНАЧЕ БРАУЗЕР ВЫДАСТ ОШИБКУ-->
+
+
+</head>
+<body>
+<div class="container">
+<div id="to-do">
+<h1 style="font-family: 'Fredoka One', cursive;">Мой список дел</h1>
+
+    <button style="font-family: 'Fredoka One', cursive;" id="add-todo">Добавьте Задачу</button>
+
+<h2 style="font-family: 'Fredoka One', cursive;">Предстоящие задачи</h2>
+<ul id="todo-list"  class="sortlist">
+  
+</ul>
+</div>
+<div id="completed">
+<h2>Выполненные задачи</h2>
+<ul id="completed-list"  class="sortlist">
+  
+</ul>
+</div>
+
+    <div id="new-todo" title="Add to task">
+        <form class="form">
+            <p>
+                <label for="task"><strong>Название задачи:  </strong></label>
+                <input type="text" name="task" id="task">
+            </p>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
